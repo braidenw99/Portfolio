@@ -16,10 +16,11 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid #111111;
 }
 
 nav h1 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -39,27 +40,71 @@ nav a {
 }
 
 nav a:hover {
-  color: #00ff0d;
+  color: #ce0000;
 }
 
 /* About Styles */
 .about {
+  width: 100%;
   background-color: #111111;
   color: #ffffff;
-  height: 500px;
+  height: auto;
+  justify-items: center;
 }
 
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.title {
+  padding: 50px 0px;
+}
+
+.about .img {
+  padding: 0 0 100px 100px;
+}
+
+.about img {
+  padding: 0 100px 0 0;
+  border-radius: 50%;
+  float: right;
+}
 
 /* Projects Styles */
 .projects {
   background-color: #1a1a1a;
   color: #ffffff;
-  height: 500px;
+  height: auto;
+  width: 100%;
+  justify-items: center;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+  width: 60%;
+  align-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.projects .card {
+  background-color: #111111;
+  border: 1px solid #111111;
+  color:#ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Contact Styles */
 .contact {
   background-color: #111111;
   color: #ffffff;
-  height: 500px;
+  height: auto;
+  justify-items: center;
+  align-content: center;
 }
