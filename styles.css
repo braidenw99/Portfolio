@@ -1,5 +1,5 @@
 * {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +7,16 @@
 
 .title {
   padding: 50px 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p {
+  font-weight: light;
 }
 
 /* Navbar Styles */
@@ -21,12 +31,6 @@ nav {
   top: 0;
   z-index: 1000;
   border-bottom: 2px solid #111111;
-}
-
-nav h1 {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 nav ul {
@@ -83,8 +87,8 @@ nav a:hover {
 
 .projects .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
   width: 60%;
   align-content: center;
   gap: 20px;
