@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.title {
+  padding: 50px 0;
+}
+
 /* Navbar Styles */
 nav {
   display: flex;
@@ -56,10 +60,6 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   
-}
-
-.title {
-  padding: 50px 0px;
 }
 
 .about .img {
